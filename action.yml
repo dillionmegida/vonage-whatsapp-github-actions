@@ -1,0 +1,9 @@
+name: 'Vonage WhatsApp Action'
+description: 'Action to send WhatsApp messages'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+inputs:
+  message:
+    description: The message you want to send to the whatsapp number
+    required: true
