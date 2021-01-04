@@ -11,7 +11,7 @@ const messageToSend =
 	`Workflow name: ${env.GITHUB_WORKFLOW}\n` +
 	`Job name: ${env.GITHUB_JOB}`;
 
-const WHATSAPP_NUMBER = "<Recipient Number>";
+const WHATSAPP_NUMBER = "2349079055242";
 
 (async () => {
 	try {
@@ -19,13 +19,13 @@ const WHATSAPP_NUMBER = "<Recipient Number>";
 			method: "post",
 			url: "https://messages-sandbox.nexmo.com/v0.1/messages",
 			auth: {
-				username: "<API Key>",
-				password: "<Password>",
+				username: "efc833cb",
+				password: "vuCscG7gMzC7RNEz",
 			},
 			data: {
 				from: {
 					type: "whatsapp",
-					number: "<Vonage WhatsApp Number>",
+					number: "14157386170",
 				},
 				to: {
 					type: "whatsapp",
